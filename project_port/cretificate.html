@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cretivicate</title>
+<style>
+    * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+       }
+      body {
+          font-family: 'Roboto', sans-serif;
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(135deg, #1f1c2c, #928dab);
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      html, body {
+          height: 100%;
+          font-family: Arial, sans-serif;
+          overflow-x: hidden;
+      }
+      .header {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          padding: 10px 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 1000;
+      }
+      .header .portfolio {
+          font-size: 1.8rem;
+          font-weight: bold;
+          padding-left: 20px;
+          padding-right: 20px;
+      }
+      .header .menu {
+          display: flex;
+          gap: 15px;
+      }
+      .header .menu-item {
+          font-size: 1.2rem;
+          color: white;
+          text-decoration: none;
+          padding: 5px 15px;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+      .header .menu-item:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+      }
+      .main-title {
+            margin-top: 70px;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+      .footer {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 40px; /* ความสูงของสี่เหลี่ยม */
+          color: white;
+          font-size: 16px;
+          text-align: center;
+      }
+
+      .footer div {
+          flex: 1; /* แบ่งพื้นที่เท่ากัน */
+          padding: 10px;
+      }
+
+      .gallery {
+          margin-top: 40px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          padding: 20px;
+          width: 90%;
+      }
+
+      .gallery-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+          padding: 10px;
+      }
+
+      .gallery-item img {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+          border-radius: 10px;
+      }
+
+      .gallery-item p {
+          margin-top: 20px;
+          font-size: 1rem;
+          text-align: center;
+      }
+</style>
+</head>
+<div class="header">
+    <div class="portfolio">PORTFOLIO</div>
+    <div class="menu">
+        <a href="/index.html" class="menu-item">Home</a>
+        <a href="/profile.html" class="menu-item">Profile</a>
+        <a href="/activity.html" class="menu-item">Activity</a>
+        <a href="/cretificate.html" class="menu-item">Cretivicate</a>
+        <img src="https://cmms.kmitl.ac.th/uploads/uploads/9b5d8ffe-78d9-463b-9286-f66f27e0d91b-1686793377632.png" style="width: 30px; height: 30px; ">
+    </div>
+</div>
+<h1 class="main-title">Cretivicate</h1>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="/picture/cre_1.png" alt="Image 1">
+        <p>ฝึกพัฒนาสกิลของFuter Skillในการเขียนภาษา HTML,CSS,JavaScript</p>
+    </div>
+    <div class="gallery-item">
+        <img src="/picture/cre_2.png" alt="Image 2">
+        <p>ฝึกพัฒนาสกิลของ BornToDev ในการเขียนภาษา HTML,CSS</p>
+    </div>
+    <div class="gallery-item">
+        <img src="/picture/cre_3.jpg" alt="Image 3">
+        <p>เข้าร่วมการแข่งขัน spelling bee ในวันภาษาอังกฤษที่โรงเรียน</p>
+    </div>
+    <div class="gallery-item">
+        <img src="/picture/cre_4.jpg" alt="Image 4">
+        <p>เข้าร่วมค่ายเรียนออนไลน์ camp ของ it68</p>
+    </div>
+    <div class="gallery-item">
+        <img src="/picture/cre_5.png" alt="Image 5">
+        <p>เข้าร่วมค่ายฝึกภาษา HTML,CSS,JavaScript ของ 42Bangkok </p>
+    </div>
+    <div class="gallery-item">
+        <img src="/picture/cre_7.png" alt="Image 6">
+        <p>เข้ารวมฟังเสวนาของคณะ it และได้ดูได้ฟังกิจกรรมสนุกๆ </p>
+    </div>
+</div>
+
+<div class="footer">
+    <div>📞 Phone: 093-276-8406</div>
+    <div>📧 Email: pornchai43210@gmail.com</div>
+    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png" style="width: 20px; height: 20px;"> Facbook: Sittichai Supasorn</div>
+    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" style="width: 20px; height: 20px;"> instagram: fg_ilm1</div>
+</div>

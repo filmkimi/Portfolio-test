@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1f1c2c, #928dab);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px; /* เพิ่มระยะด้านบนเพื่อไม่ให้ทับ Header */
+        padding-bottom: 60px; /* เพิ่มระยะด้านล่างเพื่อไม่ให้ทับ Footer */
+    }
+    html, body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+    .header .portfolio {
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header .menu {
+        display: flex;
+        gap: 15px;
+    }
+    .header .menu-item {
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .header .menu-item:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .main-title {
+            margin-top: 50px;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40px; /* ความสูงของสี่เหลี่ยม */
+        color: white;
+        font-size: 16px;
+        text-align: center;
+    }
+    .footer div {
+        flex: 1; /* แบ่งพื้นที่เท่ากัน */
+        padding: 10px;
+    }
+    .gallery {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* จัดเป็น 3 คอลัมน์ */
+        gap: 20px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery-item {
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        height: 400px; /* กำหนดความสูงกล่อง */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+        overflow: hidden; /* ป้องกันไม่ให้ภาพเกินขอบกล่อง */
+    }
+    .gallery-item img {
+    width: 100%; /* ทำให้ภาพเต็มความกว้างกล่อง */
+    height: 250px; /* กำหนดความสูงของภาพ */
+    object-fit: contain; /* แสดงภาพทั้งหมดโดยไม่ตัด */
+    object-position: top; /* จัดตำแหน่งภาพให้หัวอยู่ด้านบน */
+    border-radius: 10px 10px 0 0; /* ทำให้มุมบนของภาพมน */
+}
+    .gallery-item p {
+        font-size: 1rem;
+        margin-top: 10px;
+        line-height: 1.4;
+        color: #fff;
+    }
+    .adjust-head {
+    object-fit: contain;
+    object-position: top;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="portfolio">PORTFOLIO</div>
+        <div class="menu">
+            <a href="/index.html" class="menu-item">Home</a>
+            <a href="/profile.html" class="menu-item">Profile</a>
+            <a href="/activity.html" class="menu-item">Activity</a>
+            <a href="/cretificate.html" class="menu-item">Cretivicate</a>
+            <img src="https://cmms.kmitl.ac.th/uploads/uploads/9b5d8ffe-78d9-463b-9286-f66f27e0d91b-1686793377632.png" style="width: 30px; height: 30px;">
+        </div>
+    </div>
+    <h1 class="main-title">Activity</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="/picture/ac_1.jpg" alt="Image 1">
+            <p>เป็นส่วนร่วมในการแข่งบาสในวันงานกีฬาสีของสีม่วง และสามารถขว้าแชมป์ได้ที่ 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/picture/ac_2.jpg" alt="Image 2">
+            <p>เป็นส่วนช่วยเล่น folksong ในวันคณิตศาสตร์ และได้คะแนนโหวตได้ที่ 2 ของงาน</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/picture/ac_3.png" alt="Image 3">
+            <p>เข้าร่วมค่ายของ 42Bangkok เข้าค่าย<br>ไป-กลับ 7 วัน โดยได้การทำงานเป็นทีมกับคนที่ไม่รู้จักกันมาก่อนและได้รู้จักเพื่อนใหม่ๆมากขึ้น</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/picture/ac_4.jpg" alt="Image 3">
+            <p>เข้ารวมฟังเสวนากับสาขาและคณะเพื่อที่อยากจะทราบอะไรหลายๆอย่าง ในทั้งสายการเรียน และได้ฟังการตอบคำถามที่ไม่รู้จนทำให้เข้าใจคณะและสาขาที่จะเข้า</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/picture/ac_5.jpg" alt="Image 3">
+            <p>เป็นตัวแทนในการตีกล่องประชันและสันทนาการสีของคณะสีม่อง</p>
+        </div>
+        <div class="gallery-item">
+            <img src="/picture/ac_6.jpg" alt="Image 3">
+            <p>เป็นตัวแทนวงที่คัดผ่านจาก 10 ทีมเหลือ 4 ทีม เล่นใงาน Open House ของโรงเรียน</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>📞 Phone: 093-276-8406</div>
+        <div>📧 Email: pornchai43210@gmail.com</div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png" style="width: 20px; height: 20px;"> Facbook: Sittichai Supasorn</div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" style="width: 20px; height: 20px;"> instagram: fg_ilm1</div>
+    </div>
+</body>
+</html>
